@@ -4,8 +4,6 @@ from model import Product,db
 products_boilerplate = Blueprint('products',__name__)
 
 
-products = []
-counter = 1
 
 @products_boilerplate.route('/',methods=['GET'])
 def get_products():
